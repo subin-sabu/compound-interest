@@ -335,7 +335,7 @@ async function generateQuotePDF(quote, template) {
 
   drawTable(pdf, template.table, quote.data);
 
-  pdf.save(`invest-${quote.premium}-${quote.ppt}-y.pdf`);
+  pdf.save(`invest-${quote.premium}-${quote.ppt}ppt-${quote.pt}pt.pdf`);
 }
 
 function drawTable(pdf, table, data) {
