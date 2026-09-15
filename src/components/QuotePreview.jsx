@@ -87,13 +87,14 @@ const TEMPLATES = {
     fields: [
       {
         id: "pt-header",
-        x: 257,
+        x: 265,
+        width: 50,
         y: 74,
         fontSize: 48,
         fontWeight: "bold",
         color: "#10458E",
-        align: "left",
-        value: (q) => String(q.pt),
+        align: "center",
+        value: (q) => String(q.ppt),
       },
       {
         id: "maturity-header",
@@ -334,7 +335,7 @@ async function generateQuotePDF(quote, template) {
 
   drawTable(pdf, template.table, quote.data);
 
-  pdf.save(`investment-quote-${quote.pt}-years.pdf`);
+  pdf.save(`invest-${quote.premium}-${quote.ppt}-y.pdf`);
 }
 
 function drawTable(pdf, table, data) {
