@@ -103,11 +103,11 @@ function QuoteForm({ onGenerate }) {
               <input
                 type="number"
                 min="1"
-                max="60"
+                max="70"
                 required
                 value={pt}
                 onChange={(e) => setPt(e.target.value)}
-                placeholder="40"
+                placeholder="25"
                 className="w-full rounded-xl border border-gray-300 px-4 py-3 text-lg focus:outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-600 transition"
               />
             </div>
@@ -122,8 +122,9 @@ function QuoteForm({ onGenerate }) {
 
             <input
               type="number"
-              min="0.01"
+              min="-10"
               step="0.01"
+              max="15"
               required
               value={cagr}
               onChange={(e) => setCagr(e.target.value)}
