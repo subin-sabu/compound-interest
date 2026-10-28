@@ -124,7 +124,7 @@ function QuoteForm({ onGenerate }) {
               type="number"
               min="-10"
               step="0.01"
-              max="15"
+              max="16"
               required
               value={cagr}
               onChange={(e) => setCagr(e.target.value)}
